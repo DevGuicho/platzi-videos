@@ -1,16 +1,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import './assets/styles/App.scss';
-import Carousel from './components/Carousel';
-import CarouselItem from './components/CarouselItem';
-import Categories from './components/Categories';
-import Header from './components/Header';
-import Search from './components/Search';
-import useInitialState from './hooks/useInitialState';
+import Carousel from '../components/Carousel';
+import CarouselItem from '../components/CarouselItem';
+import Categories from '../components/Categories';
+import Header from '../components/Header';
+import Search from '../components/Search';
+import useInitialState from '../hooks/useInitialState';
 
 const API = 'http://localhost:3000/initialState';
 
-const App = () => {
+const Home = () => {
   const videos = useInitialState(API);
   return (
     <div>
@@ -43,4 +42,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
