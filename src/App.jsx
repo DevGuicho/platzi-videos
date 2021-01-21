@@ -4,6 +4,7 @@ import './assets/styles/App.scss';
 import Carousel from './components/Carousel';
 import CarouselItem from './components/CarouselItem';
 import Categories from './components/Categories';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Search from './components/Search';
 import useInitialState from './hooks/useInitialState';
@@ -39,6 +40,7 @@ const App = () => {
           ))}
         </Carousel>
       </Categories>
+      <Footer />
     </div>
   );
 };
