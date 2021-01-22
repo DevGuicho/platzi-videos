@@ -4,11 +4,13 @@ import { connect } from 'react-redux';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import Categories from '../components/Categories';
+import Header from '../components/Header';
 import Search from '../components/Search';
 
 const Home = ({ myList, trends, originals }) => {
   return (
     <>
+      <Header />
       <Search />
       {myList.length > 0 && (
         <Categories title="My list">
